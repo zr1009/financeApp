@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/4.css"/>
+	</head>
+	<body>
+		<header>
+			<div class="goback">
+				<img src="img/back.jpg"/>
+				返回
+			</div>
+			<p>无现金额度</p>
+			<div class="goback">
+			
+			</div>
+		</header>
+		<div class="content">
+			<img src="img/qb.jpg"/>
+			<p>您当前无现金额度,请先申请</p>
+		</div>
+		<div class="optiom">
+			<a href="javascript:;">暂不申请</a>
+			<a href="javascript:;" class="ljsq">立即申请</a>
+		</div>
+	</body>
+	<script type="text/javascript">
+		(function(win){
+			var ratio,scaleValue,renderTime,
+					document=window.document,
+					docElem=document.documentElement,
+					vpm=document.querySelector('meta[name="viewport"]');
+			if(vpm){
+				var tempArray=vpm.getAttribute("content").match(/initial\-scale=(["']?)([\d\.]+)\1?/);
+				if(tempArray){
+					scaleValue=parseFloat(tempArray[2]);
+					ratio=parseInt(1/scaleValue);
+				}
+			}else{
+				vpm=document.createElement("meta");
+				vpm.setAttribute("name","viewport");
+				vpm.setAttribute("content","width=device-width,initial-scale=1,user-scalable=no,minimal-ui");
+				docElem.firstElementChild.appendChild(vpm);
+			}
+		
+			win.addEventListener("resize",function(){
+				clearTimeout(renderTime);
+				renderTime=setTimeout(initPage,300);
+			},false);
+		
+			win.addEventListener("pageshow", function(e) {
+				e.persisted && (clearTimeout(renderTime),renderTime=setTimeout(initPage,300));
+			}, false);
+		
+			"complete"===document.readyState?document.body.style.fontSize =12*ratio+"px":
+					document.addEventListener("DOMContentLoaded",function(){
+						document.body.style.fontSize =12*ratio+"px";
+					},false);
+			initPage();
+			function initPage(){
+				var htmlWidth=docElem.getBoundingClientRect().width;
+				if(htmlWidth>640) htmlWidth=640;
+				htmlWidth/ratio>640 && (htmlWidth=640*ratio);
+				win.rem=htmlWidth/16;
+				docElem.style.fontSize=win.rem+"px";
+			}
+		})(window);
+		
+		var fh = document.getElementsByClassName("goback")[0];
+		fh.onclick = function(){
+			history.back(-1)
+		}
+		
+	</script>
+</html>

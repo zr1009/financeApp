@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/3.css"/>
+		<script src="js/rem.js"></script>
+		
+	</head>
+	<body>
+		<header>
+			<div class="goback">
+				<img src="img/back.jpg"/>
+				返回
+			</div>
+			<p>我的账单</p>
+			<div class="goback">
+			
+			</div>
+		</header>
+		<ul>
+			<li class="active">七日内待还</li>
+			<li>提前还款</li>
+		</ul>
+		<div id="active_contenta">
+			<div class="show">
+				<img src="img/dd.jpg"/>
+				<p>暂无待还的账单</p>
+			</div>
+			<div>
+				<img src="img/dd.jpg"/>
+				<p>暂无提前还款的账单</p>
+			</div>
+		</div>
+		<footer>
+			<div>
+				<input type="radio" class="fl"/>
+				已选<span>0.00</span>元
+			</div>
+			<button>立即付款</button>
+		</footer>
+	</body>
+	<script type="text/javascript">
+		window.onload = function(){
+			var aLi = document.getElementsByTagName('li');
+			var oBox = document.getElementById('active_contenta');
+			var aDiv = oBox.getElementsByTagName('div');
+//			console.log(aDiv)
+			for(var i=0;i<aLi.length;i++){
+				aLi[i].index = i;
+				aLi[i].onclick = function(){
+					for(var i=0;i<aLi.length;i++){
+						aLi[i].className = '';
+						aDiv[i].className = '';
+					}
+					aDiv[this.index].className = 'show';
+					this.className = 'active';
+				}
+			}
+		}
+	</script>
+	<script type="text/javascript">
+		
+		
+		var qx = document.getElementsByClassName("goback")[0];
+		qx.onclick = function(){
+			history.back(-1)
+		}
+	</script>
+</html>

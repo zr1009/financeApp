@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+		<title></title>
+		<link rel="stylesheet" href="css/swiper.min.css">
+		<link rel="stylesheet" href="css/bottoma.css" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/1.css"/>
+		
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<!--<script src="js/index.js" type="text/javascript" charset="utf-8"></script>-->
+		
+	</head>
+	<body>
+	<div class="header">
+			<a class="header_tools" href="K_search.html">
+				<img src="img/sous.jpg"/>
+			</a>
+			<div class="xcfl">
+				
+			</div>
+			<a class="header_tools" href="K_information.html">
+				<img src="img/pl.jpg"/>
+			</a>
+		</div>
+		<div class="header_bottom">
+			<div>
+				<a href="Z_login.html" class="t_login">登录</a>
+			</div>
+			<p>您的申请尚未完成 , 还差一步即可变身高富帅喔</p>
+			<div class="appzx">
+				<a href="javascript:;">APP专享价 |</a>
+				<a href="javascript:;">借款利率9.8折 |</a>
+				<a href="javascript:;">戳此领取>>></a>
+			</div>
+		</div>
+		<div class="smtools">
+			<a class="smtoolsa"  href="K_bill.html">
+				<img src="img/hk.jpg"/>
+				<div>
+					<h3>还款</h3>
+					<p>7日内无待还</p>
+				</div>
+			</a>
+			<a href="K_preference.html">
+				<img src="img/yhj.jpg"/>
+				<div>
+					<h3>优惠卷</h3>
+					<p>0张未使用</p>
+				</div>
+			</a>
+			
+		</div>
+		<div class="smtools">
+			<a href="K_preference.html" class="smtoolsa">
+				<img src="img/te.jpg"/>
+				<div>
+					<h3>提额</h3>
+					<p>试试您的手气</p>
+				</div>
+			</a>
+			<a href="K_cashless.html">
+				<img src="img/jdjh.jpg" class="edjh"/>
+				<div>
+					<h3>额度激活</h3>
+					<p>开启信用生活</p>
+				</div>
+			</a>
+		</div>
+		<div class="banner swiper-container">
+	        <div class="swiper-wrapper">
+	            <div class="swiper-slide"><img src="img/banner1.jpg" alt=""></div>
+	            <div class="swiper-slide"><img src="img/banner2.jpg" alt=""></div>
+	            <div class="swiper-slide"><img src="img/banner3.jpg" alt=""></div>
+	            <div class="swiper-slide"><img src="img/banner4.jpg" alt=""></div>
+	        </div>
+	        <div class="swiper-pagination"></div>
+	    </div>
+		<div class="smtools">
+			<a href="S_lotteryticket.html" class="smtoolsa">
+				<img src="img/hyr.jpg"/>
+				<div>
+					<h3>会员日</h3>
+					<p>周三10点一元开抢</p>
+				</div>
+			</a>
+			<a>
+				<img src="img/czzx.jpg" class="edjh"/>
+				<div>
+					<h3>充值中心</h3>
+					<p>最长40天免息</p>
+				</div>
+			</a>
+		</div>
+		<div class="smtools">
+			<a href="Z_today.html" class="smtoolsa">
+				<img src="img/jrmx.jpg"/>
+				<div>
+					<h3>今日免息</h3>
+					<p>爆品每天限量抢购</p>
+				</div>
+			</a>
+			<a>
+				<img src="img/xszj.jpg" class="edjh"/>
+				<div>
+					<h3>限时直降</h3>
+					<p>超值正品便宜购</p>
+				</div>
+			</a>
+		</div>
+		<div class="smtools">
+			<a class="smtoolsa">
+				<img src="img/blrz.jpg"/>
+				<div>
+					<h3>白领认证</h3>
+					<p>登邮箱享高级信息</p>
+				</div>
+			</a>
+			<a>
+				<img src="img/fqdy.jpg" class="edjh"/>
+				<div>
+					<h3>分期待遇</h3>
+					<p>额度不足也能享</p>
+				</div>
+			</a>
+		</div>
+		<div class="footer_top"></div>
+		<div id="foot">
+			<a href="K_index.html"><img src='img/homepage.png'>首页</a>
+			<a href="S_homepage.html"><img src="img/shopping.png">分期商城</a>
+			<a href="Z_life.html"><img src="img/life.png">信用生活</a>
+			<a href="H_my.html"><img src="img/my.png">我的</a>
+	</div>
+		<div id="sidebar">
+			<img src="img/lu.png"/>
+		</div>
+		<script src="js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+	    <script>
+	    var swiper = new Swiper('.swiper-container', {
+	        pagination: '.swiper-pagination',
+	        nextButton: '.swiper-button-next',
+	        prevButton: '.swiper-button-prev',
+	        paginationClickable: true,
+	        spaceBetween: 30,
+	        centeredSlides: true,
+	        autoplay: 2500,
+	        autoplayDisableOnInteraction: false
+	    });
+	    </script>
+	</body>
+	
+	<script type="text/javascript">
+		(function(win){
+			var ratio,scaleValue,renderTime,
+					document=window.document,
+					docElem=document.documentElement,
+					vpm=document.querySelector('meta[name="viewport"]');
+			if(vpm){
+				var tempArray=vpm.getAttribute("content").match(/initial\-scale=(["']?)([\d\.]+)\1?/);
+				if(tempArray){
+					scaleValue=parseFloat(tempArray[2]);
+					ratio=parseInt(1/scaleValue);
+				}
+			}else{
+				vpm=document.createElement("meta");
+				vpm.setAttribute("name","viewport");
+				vpm.setAttribute("content","width=device-width,initial-scale=1,user-scalable=no,minimal-ui");
+				docElem.firstElementChild.appendChild(vpm);
+			}
+		
+			win.addEventListener("resize",function(){
+				clearTimeout(renderTime);
+				renderTime=setTimeout(initPage,300);
+			},false);
+		
+			win.addEventListener("pageshow", function(e) {
+				e.persisted && (clearTimeout(renderTime),renderTime=setTimeout(initPage,300));
+			}, false);
+		
+			"complete"===document.readyState?document.body.style.fontSize =12*ratio+"px":
+					document.addEventListener("DOMContentLoaded",function(){
+						document.body.style.fontSize =12*ratio+"px";
+					},false);
+			initPage();
+			function initPage(){
+				var htmlWidth=docElem.getBoundingClientRect().width;
+				if(htmlWidth>640) htmlWidth=640;
+				htmlWidth/ratio>640 && (htmlWidth=640*ratio);
+				win.rem=htmlWidth/16;
+				docElem.style.fontSize=win.rem+"px";
+			}
+		})(window);
+	</script>
+</html>

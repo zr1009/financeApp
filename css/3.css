@@ -1,0 +1,100 @@
+body{
+	background: #f3f3f3;
+}
+ a,button,input {
+ 	-webkit-tap-highlight-color: rgba(255,0,0,0);
+ }
+
+header{
+	width: 100%;
+	height: 2rem;
+	background: #457ecd;
+	line-height: 2rem;
+	display: flex;
+	color: #FFFFFF;
+	position: fixed;
+	top: 0;
+	z-index: 1;
+}
+header .goback{
+	width: 3rem;
+	margin: 0 0.6rem;
+}
+header .goback img{
+	width: 0.6rem;
+	height: 1rem;
+	vertical-align: middle;
+	margin-top: -0.2rem;
+}
+header p{
+	flex: 1;
+	text-align: center;
+	font-size: 0.8rem;
+}
+ul{
+	height: 2rem;
+	background: #FFFFFF;
+	line-height: 2rem;
+	display: flex;
+	padding: 0 0.5rem;
+	margin-top: 2rem;
+}
+ul li{
+	flex: 1;
+	text-align: center;
+}
+.active{
+	color: #5185ca;
+	border-bottom: 2px solid #5185ca;
+}
+#active_contenta{
+	padding-top: 4rem;
+}
+#active_contenta div{
+	display: none;
+	text-align: center;
+}
+#active_contenta div img{
+	width: 4.5rem;
+	height: 4.5rem;
+	margin-bottom: 1rem;
+}
+#active_contenta div p{
+	color: #a4a3a3;
+}
+.show{
+	display: block !important;
+}
+footer{
+	width: 100%;
+	height: 2.3rem;
+	position: fixed;
+	bottom: 0;
+	display: flex;
+}
+footer div{
+	flex: 1;
+	background:#323232;
+	color: #FFFFFF;
+	padding: 0.5rem 0.7rem;
+	line-height: 1.3rem;
+	letter-spacing: 0.05rem;
+}
+footer div input{
+	width: 1.1rem;
+	height: 1.1rem;
+	border: 1px solid #727272;
+	background: #323232;
+	margin-right: 0.4rem;
+}
+footer div span{
+	color: #e59c2e;
+}
+footer button{
+	width: 6.4rem;
+	background: #457ecd;
+	border: none;
+	color: #FFFFFF;
+	text-align: center;
+	/*line-height: 2.3rem;*/
+}

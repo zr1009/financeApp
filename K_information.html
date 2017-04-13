@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/K_reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/6.css"/>
+		<script SRC="js/rem.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="goback">
+				<img src="img/back.jpg"/>
+				返回
+			</div>
+			<p>消息中心</p>
+			<div class="goback">
+				全部已读
+			</div>
+		</header>
+		<ul>
+			<li>
+				<img src="img/wdjy.jpg" class="moretool fl"/>
+				<div class="fl">
+					<h6>我的交易</h6>
+					<p>点击查看订单,取现相关信息</p>
+				</div>
+				<span class="fr">
+					<img src="img/you.jpg"/>
+				</span>
+			</li>
+			<li>
+				<img src="img/yhhd.jpg" class="moretool fl"/>
+				<div class="fl">
+					<h6>优惠活动</h6>
+					<p>查看优惠活动,不要错过喔</p>
+				</div>
+				<span class="fr">
+					<img src="img/you.jpg"/>
+				</span>
+			</li>
+			<li>
+				<img src="img/wdzc.jpg" class="moretool fl"/>
+				<div class="fl">
+					<h6>我的资产</h6>
+					<p>查看优惠卷,红包消息,了解资产活动</p>
+				</div>
+				<span class="fr">
+					<img src="img/you.jpg"/>
+				</span>
+			</li>
+			<li>
+				<img src="img/wded.jpg" class="moretool fl"/>
+				<div class="fl">
+					<h6>我的额度</h6>
+					<p>查看额度信息</p>
+				</div>
+				<span class="fr">
+					<img src="img/you.jpg"/>
+				</span>
+			</li>
+			<li>
+				<img src="img/qtxx.jpg" class="moretool fl"/>
+				<div class="fl">
+					<h6>其他消息</h6>
+					<p>点击查看其他消息</p>
+				</div>
+				<span class="fr">
+					<img src="img/you.jpg"/>
+				</span>
+			</li>
+		</ul>
+	</body>
+	<script type="text/javascript">
+		var qx = document.getElementsByClassName("goback")[0];
+		qx.onclick = function(){
+			history.back(-1)
+		}
+	</script>
+</html>

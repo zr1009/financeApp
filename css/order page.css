@@ -1,0 +1,99 @@
+body{
+	background: #f1f1f1;
+}
+.head{
+	width:100%; height:2rem; background: #457ecd; position: fixed; top:0; z-index: 100;
+}
+.head_one{
+	width:100%; height:2rem; background: #457ecd; margin-bottom: 0.5rem;
+}
+.head a:nth-child(1){
+	display: block; width:0.6rem; height:0.95rem; background:url(../img/s-18.gif); background-size: cover;
+	margin-top:0.55rem; margin-left:0.65rem; float: left; font-weight: bold;
+}
+.head a:nth-child(2){
+	display: block; float: left; margin-left:0.25rem; font-size:0.6rem; color:#fff; width:1.6rem;
+	height:2rem; line-height:2rem;
+}
+.head p{
+	width:4.5rem; height:2rem; float: left; line-height: 2rem; font-size:0.8rem;color:#fff;
+	margin-left:3.5rem;
+}
+.head a:nth-child(4){
+	display: block; width:1rem; height:1rem; float: right; background:url(../img/s-19.gif);
+	background-size:cover; margin-right:0.6rem; margin-top:0.5rem;
+}
+
+.site{
+	width:100%; height:3.1rem; background:#fff; margin-bottom: 0.5rem; display: block;
+}
+.site img:nth-child(1){
+	width:0.7rem; height:0.9rem; margin-top:1.05rem; margin-left:0.65rem; float: left;
+}
+.site span{
+	display: block; width:12.75rem; height:3.1rem; line-height: 3.1rem; float: left; margin-left:0.75rem;
+	font-size:0.7rem; color:#fbb64c;
+}
+.site img:nth-child(3){
+	width:0.4rem; height:0.65rem; margin-top:1.15rem;  float: left;
+}
+
+.details{
+	width:100%; height:5.5rem; background:#fff; margin-bottom: 0.5rem;
+}
+.details img{
+	display: block; width:2.8rem; height: 3.3rem; float: left; margin-left:0.9rem; margin-top:1.05rem;
+	margin-right:1rem;
+}
+.details p{
+	width:11.2rem; height:4.4rem; margin-top:0.95rem; float: left;
+}
+.details p span:nth-child(1){
+	display: block; width:11.2rem; height:1.1rem; font-size:0.6rem; color:#464646;
+}
+.details p span:nth-child(2){
+	display: block; width:9.2rem; height:2rem ;line-height:0.8rem; font-size:0.55rem; color:#747474;
+}
+.details p span:nth-child(3){
+	display: block; width:11.2rem; height:1.1rem;
+}
+.details p span:nth-child(3) i:nth-child(1){
+	display: block; width:7.5rem; height:1.1rem; font-size:0.65rem; color:#feb754; float:left;
+}
+.details p span:nth-child(3) i:nth-child(2){
+	display: block; width:1.3rem; height:1.1rem; font-size:0.5rem; color:#5a5a5a; float: right;
+}
+.ticket{
+	display: block; width:100%; height:2.2rem; background:#fff;
+}
+.ticket span{
+	display: block; width:4.1rem; height:2.2rem; line-height:2.2rem; float: left; margin-left:0.65rem;
+	font-size:0.65rem; color:#323232;
+}
+.ticket img{
+	width:0.4rem; height:0.65rem; margin-top:0.8rem;  float: right;  margin-right:0.75rem;
+}
+
+
+.submit{
+	width:100%; height:2.15rem; position: fixed; bottom: 0; background:#fff;
+}
+.submit a{
+	width:6.4rem; height:2.15rem; background:#457ecd; border:none; text-align: center;
+	line-height:2.15rem; font-size:0.7rem; color:#fff; font-weight: bold; float: right;
+}
+.submit p{
+	width:auto; height:2.15rem; float: right; 
+}
+.submit p span:nth-child(1){
+	display: block; width:1.95rem; height:2.15rem; line-height:2.15rem; font-size:0.6rem; color:#484848;
+	float: left;
+}
+.submit p span:nth-child(2){
+	display: block; width:auto; height:2.15rem; line-height:2.15rem; font-size:0.6rem; color:#fbbb53;
+	float: left; margin-right:0.25rem;
+}
+.submit p span:nth-child(3){
+	display: block; width:1.4rem; height:2.15rem; line-height:2.15rem; font-size:0.6rem; color:#484848;
+	float: left;
+}

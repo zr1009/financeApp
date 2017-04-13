@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>订单页</title>
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/order page.css" />
+	</head>
+	<body>
+		<div class="head">
+			<a href="javascript:;"></a>
+			<a href="javascript:;" class="fh">返回</a>
+			<p>确认订单</p>
+		</div>
+		<div class="head_one"></div>
+		<a href="javscript:;" class="site">
+			<img src="img/s-33.gif" />
+			<span>请填写收货地址信息</span>
+			<img src="img/s-34.gif" />
+		</a>
+		<div class="details">
+			<img src="img/s-35.gif" />
+			<p>
+				<span>华为Mate 9手机[爱施德]</span>
+				<span>颜色:月光银,版本:全国通4G,容量:4GB+32GB,渠道:爱施德第三方</span>
+				<span>
+					<i>售价:￥3558.00</i>
+					<i>×1</i>
+				</span>
+			</p>
+		</div>
+		<a href="javscript:;" class="ticket">
+			<span>优惠券</span>
+			<img src="img/s-34.gif" />
+		</a>
+		<div class="submit">
+			<a href="javscript:;">提交订单</a>
+			<p>
+				<span>总价:</span>
+				<span>3558.00</span>
+				<span>元</span>
+			</p>
+		</div>
+		<script>
+			document.documentElement.style.fontSize = innerWidth/16+'px';
+			onresize = function(){
+				document.documentElement.style.fontSize = innerWidth/16+'px';
+			};
+			
+			var fh = document.getElementsByClassName("fh")[0]
+		fh.onclick = function(){
+			history.back(-1)
+		}
+		</script>
+		
+	</body>
+</html>

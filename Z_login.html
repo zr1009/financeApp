@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/login.css"/>
+		<title></title>
+	</head>
+	<body>
+		<img src="img/logo.png" id="logo" />
+		<div id="email">
+			<img src="img/email.png" />
+			<input type="text" value="E-mail adders" />
+		</div>
+		<div id="password">
+			<img src="img/password.png" />
+			<input type="text" value="Input password" />
+		</div>
+		<div id="sign">Sign up</div>
+		<div id="forgot">Forgot　password?</div>
+		<a href="Z_register.html" class="foot">New here?　Sign in</a>
+		
+		<script>	
+		    document.documentElement.style.fontSize = innerWidth/16 + 'px';
+		    onresize = function(){
+				document.documentElement.style.fontSize = innerWidth/16 + 'px';
+	    	};
+	    	
+	    	sign.onclick=function(){
+	    		window.location.href = "K_index.html"
+	    	}
+	    	
+	    	var oInput = document.getElementsByTagName("input");
+	    	for(var i=0;i<oInput.length;i++){
+	    		oInput[i].onfocus = function(){
+	    		this.value = ""
+	    	}
+	    	}
+	    	
+	    	
+	    	
+  		</script>
+	</body>
+</html>

@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  outline: none;
+  font-family: "微软雅黑";
+}
+body {
+  background: #f3f3f3;
+}
+.attribute {
+  height: 8.75rem;
+  border-top: 0.05rem solid #cecece;
+  font-size: 0.65rem;
+  color: #7e7e7e;
+}
+.color {
+  width: 14rem;
+  height: 3.5rem;
+  line-height: 3.5rem;
+  margin-top: 0.6rem;
+  margin-left: 0.85rem;
+}
+.color p:nth-child(1) {
+  float: left;
+}
+.color p:nth-child(2) {
+  width: 12rem;
+  height: 100%;
+  float: left;
+  margin-left: 0.25rem;
+}
+.color p:nth-child(2) span {
+  width: 3.35rem;
+  line-height: 1.35rem;
+  text-align: center;
+  height: 1.35rem;
+  border: 0.1rem solid #cacaca;
+  float: left;
+  margin-right: 0.4rem;
+  display: block;
+  color: #4d4d4d;
+  font-size: 0.5rem;
+  border-radius: 0.15rem;
+}
+.color p:nth-child(2) span:nth-child(4),
+.color p:nth-child(2) span:nth-child(5) {
+  margin-top: 0.4rem;
+}
+.color p:nth-child(2) span:nth-child(5) {
+  border: 0.1rem solid #6595df;
+}
+.capacity {
+  width: 14rem;
+  height: 1.6rem;
+  line-height: 1.6rem;
+  margin-top: 0.4rem;
+  margin-left: 0.85rem;
+}
+.capacity p:nth-child(1) {
+  float: left;
+}
+.capacity p:nth-child(2) {
+  width: 12rem;
+  height: 100%;
+  float: left;
+  margin-left: 0.25rem;
+}
+.capacity p:nth-child(2) span {
+  width: 3.35rem;
+  line-height: 1.35rem;
+  text-align: center;
+  height: 1.35rem;
+  border: 0.1rem solid #cacaca;
+  float: left;
+  margin-right: 0.4rem;
+  display: block;
+  color: #4d4d4d;
+  font-size: 0.5rem;
+  border-radius: 0.15rem;
+}
+.capacity p:nth-child(2) span:nth-child(2) {
+  border: 0.1rem solid #6595df;
+}
+.number {
+  width: 14rem;
+  height: 1.6rem;
+  line-height: 1.6rem;
+  margin-top: 0.6rem;
+  margin-left: 0.85rem;
+}
+.number p:nth-child(1) {
+  float: left;
+}
+.number p:nth-child(2) {
+  width: 12rem;
+  height: 100%;
+  float: left;
+  margin-left: 0.25rem;
+}
+.number p:nth-child(2) span {
+  width: 1.4rem;
+  line-height: 1.35rem;
+  text-align: center;
+  height: 1.35rem;
+  border: 0.1rem solid #dcdcdc;
+  float: left;
+  display: block;
+  color: #4d4d4d;
+  font-size: 0.5rem;
+}
+.number p:nth-child(2) span:nth-child(1) {
+  border-radius: 0.2rem 0 0 0.2rem;
+}
+.number p:nth-child(2) span:nth-child(3) {
+  border-radius: 0 0.2rem 0.2rem 0;
+}
+.number p:nth-child(2) span:nth-child(2) {
+  width: 2.2rem;
+  border-left: none;
+  border-right: none;
+}
+.distribution {
+  background: #fff;
+  height: 1.9rem;
+  color: #828282;
+  font-size: 0.6rem;
+  line-height: 1.9rem;
+}
+.distribution span:nth-child(1) {
+  display: block;
+  float: left;
+  margin-left: 0.85rem;
+}
+.distribution span:nth-child(1) c {
+  color: #3c3c3c;
+}
+.distribution a:nth-child(2) {
+  display: block;
+  float: right;
+  margin-right: 1rem;
+  font-size: 0.7rem;
+}
+.goods {
+  height: 1.7rem;
+  line-height: 1.7rem;
+  color: #e11314;
+  font-size: 0.7rem;
+  text-indent: 2.25rem;
+}
+.diva {
+  height: 0.65rem;
+  line-height: 0.65rem;
+  font-size: 0.45rem;
+  margin-top: 0.5rem;
+  vertical-align: middle;
+}
+.diva img {
+  width: 0.65rem;
+  height: 0.65rem;
+  display: inline-block;
+}
+.imga {
+  margin-left: 0.8rem;
+}
+.look {
+  height: 1.35rem;
+  width: 6.4rem;
+  line-height: 1.35rem;
+  margin: 0 auto;
+  margin-top: 0.85rem;
+  border-radius: 0.2rem;
+  border: 0.05rem solid #dae1e7;
+  color: #c0c0c0;
+  text-align: center;
+  font-size: 0.5rem;
+  margin-bottom: 3.1rem;
+}
+.foot {
+  width: 100%;
+  height: 2rem;
+  text-align: center;
+  line-height: 2rem;
+  position: fixed;
+  bottom: 0;
+  color: #fff;
+  font-size: 0.75rem;
+  background: #dbdbdb;
+  border-top: 0.1rem solid #d7d7d7;
+}
+/*# sourceMappingURL=details.css.map */

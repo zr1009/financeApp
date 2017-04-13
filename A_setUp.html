@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	    <title></title>
+	    <link rel="stylesheet" href="css/common.css" />
+	    <link rel="stylesheet" href="css/reset.css" />
+	    <link rel="stylesheet" href="css/setUp.css" />
+	    <script src="js/rem.js"></script>
+	</head>
+	<body>
+		<div class="clear">
+			<a class="left" href="javascriot:;">
+				<img class="left" src="img/exit.jpg" />
+				<span class="left">返回</span>
+			</a>
+			<div class="left">设置</div>
+			<div class="right">使用说明</div>
+		</div>
+		<div></div>
+		<div>
+			<a href="A_anquan.html">
+				
+				<span>安全中心</span>
+				<img src="img/jiantou.jpg" />
+			</a>
+			<a href="jabascript:;">
+			
+				<span>银行卡管理</span>
+				<img src="img/jiantou.jpg" />
+			</a>
+			<a href="jabascript:;">
+				
+				<span>收货地址管理</span>
+				<img src="img/jiantou.jpg" />
+			</a>
+		</div>
+		<div>
+			<a href="A_gzwx.html">
+				
+				<span>关于微信</span>
+				<img src="img/jiantou.jpg" />
+			</a>
+			<a href="jabascript:;">
+			
+				<span>关于我们</span>
+				<img src="img/jiantou.jpg" />
+			</a>
+			<a href="jabascript:;" id="share">
+				
+				<span>分享招聘金融</span>
+				<img src="img/jiantou.jpg" />
+			</a>
+		</div>
+		<div>
+			<a href="jabascript:;">
+				
+				<span>清除缓存</span>
+				<img src="img/jiantou.jpg" />
+			</a>
+			<a href="jabascript:;">
+			
+				<span>服务协议模板</span>
+				
+				<img src="img/jiantou.jpg" />
+			</a>
+		</div>
+		<div id="tc">
+			退出登录
+		</div>
+		<div id="zzc">
+			
+		</div>
+		<div id="content">
+			<div>
+				<div class="left">
+					<img src="img/weixing.jpg" />
+					<p>微信好友</p>
+				</div>
+				<div class="left">
+					<img src="img/pyq.jpg" />
+					<p>朋友圈</p>
+				</div>
+				<div class="left">
+					<img src="img/xinlang.jpg" />
+					<p>新浪微博</p>
+				</div>
+				<div class="left">
+					<img src="img/qq.jpg" />
+					<p>QQ好友</p>
+				</div>
+				<div class="left">
+					<img src="img/qq_h.jpg" />
+					<p>QQ空间</p>
+				</div>
+				
+			</div>
+			<div>
+				<div id="cancel">取消</div>
+			</div>
+		</div>
+	</body>
+	<script>
+		var share=document.getElementById("share"),
+			zz=document.getElementById("zzc"),
+			content=document.getElementById("content"),
+			cancel=document.getElementById("cancel")
+		
+		share.addEventListener('click',function(){
+			zzc.style.display="block"
+			content.style.display="block"
+		},false)
+		cancel.addEventListener('click',function(){
+			zzc.style.display="none"
+			content.style.display="none"
+		},false)
+		
+		var qx = document.getElementsByClassName("left")[0];
+		qx.onclick = function(){
+			history.back(-1)
+		}
+		
+		tc.onclick=function(){
+			window.location.href ='Z_login.html'
+		}
+	</script>
+
+</html>

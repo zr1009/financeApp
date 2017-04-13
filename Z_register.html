@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0, user-scalable=no" />
+		<script src="js/jquery-2.1.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/register.css"/>
+		<title></title>
+	</head>
+	<body>
+		<img src="img/logo.png" id="logo" />
+		<div id="email">
+			<img src="img/email.png" />
+			<input type="text" value="E-mail adders" id="ipta" />
+			<span class="spa"></span>
+		</div>
+		<div id="password">
+			<img src="img/password.png" />
+			<input type="text" value="Input password" id="iptb"/>
+			<span class="spb"></span>
+		</div>
+		<div id="password">
+			<img src="img/password.png" />
+			<input type="text" value="Confirm password" id="iptc" />
+			<span class="spc"></span>
+		</div>
+		<div id="sign">Sign in</div>
+		<a class="foot" href="Z_login.html">Landing?　Sign up</a>
+		
+		
+		<script type="text/javascript">
+			$(document).ready(function(){
+				
+				
+				//邮箱验证
+				$('#ipta').blur(function() {
+					var yzemail = /^\w{1,}@\w+\.\w+$/;
+					var email = $('#ipta').val()
+					if(email == '') {
+						$('.spa').html('*邮箱不能为空')
+					}else if(!yzemail.test(email)) {
+						$(".spa").html("*邮箱格式不正确");
+					}else{
+						$(".spa").html('');
+					}
+				})
+				
+				//密码验证
+				$('#iptb').blur(function() {
+					var yzpwd = /^[a-zA-Z0-9]{3,9}$/;
+					var psd = $('#iptb').val();
+					if(psd == '') {
+						$('.spb').html('*密码不能为空');
+					}else if(!yzpwd.test(psd)){
+						$(".spb").html('*输入3-9位字符');
+					}else{
+						$(".spb").html('');
+					}
+				})
+				
+				$('#iptc').blur(function(){
+//					alert(1)
+					var repsd = $('#iptc').val()
+					if(repsd != $('#iptb').val()){
+						$('.spc').html('*两次密码不一致');
+					}else{
+						$('.spc').html('');
+					}
+				})
+			})
+		</script>
+		<script>	
+		    document.documentElement.style.fontSize = innerWidth/16 + 'px';
+		    onresize = function(){
+				document.documentElement.style.fontSize = innerWidth/16 + 'px';
+	    	};
+	    	
+	    	var oInput = document.getElementsByTagName("input");
+	    	for(var i=0;i<oInput.length;i++){
+	    		oInput[i].onfocus = function(){
+	    		this.value = ""
+	    	}
+	    	}
+  		</script>
+	</body>
+</html>

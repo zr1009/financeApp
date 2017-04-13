@@ -1,0 +1,35 @@
+a{
+	text-decoration: none;
+}
+#foot {
+  height: 2.05rem;
+  width: 100%;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  position: fixed;
+  bottom: 0;
+  background: #fff;
+  border-top: 0.05rem solid #adadad;
+}
+#foot a {
+  display: block;
+  height: 2rem;
+  -webkit-box-flex: 1;
+  text-align: center;
+  color: #96989c;
+  font-size: 0.5rem;
+  text-decoration: none;
+  font-family: "微软雅黑";
+}
+#foot a:nth-child(4){
+  color: #498fee;
+}
+#foot a img {
+  width: 1rem;
+  height: 0.9rem;
+  display: block;
+  margin: 0.22rem auto 0.16rem;
+}
+ a,button,input {
+ 	-webkit-tap-highlight-color: rgba(255,0,0,0);
+ }

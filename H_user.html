@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" name="viewport">
+		<meta charset="UTF-8">
+		<title>个人中心 第21张</title>
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/H_user.css" />
+		<script src="js/rem.js"></script>
+	</head>
+	<body>
+		<!--top start-->
+		<div class="H_top">
+			<div class="fh">
+				<i></i>
+				返回
+			</div>
+			<span>个人中心</span>
+		</div>
+		<!--top end-->
+		<!--头像一行 开-->
+		<div class="H_tx">
+			我的头像
+			<div class="H_imgBox">
+				<img src="img/tx.gif" alt="" />
+				<i></i>
+			</div>
+		</div>
+		<!--头像一行 关-->
+		<!--main-->
+		<div class="H_main">
+			<p class="H_explain">
+				您可以查看、修改或补充个人信息
+			</p>
+			<ul class="H_column">
+				<li>
+					<a href="H_identity.html">
+						<img src="img/ico1.gif" alt="" />
+						身份信息
+						<p>
+							<i></i>
+						</p>
+					</a>
+				</li>
+				<li>
+					<a href="H_identity.html">
+						<img src="img/ico2.gif" alt="" />
+						基础信息
+						<p>
+							<i></i>
+						</p>
+					<a/>
+				</li>
+				<li>
+					<a href="H_root.html">
+						<img src="img/ico3.gif" alt="" />
+						更多信息
+						<p>
+							<span style="font-size:0.6rem;margin-right:0.65rem">点击补充授权</span>
+							<i></i>
+						</p>
+					<a/>
+					
+				</li>
+			</ul>
+		</div>
+		<!--main end-->
+		<script>
+		var fh = document.getElementsByClassName("fh")[0]
+		fh.onclick = function(){
+			history.back(-1)
+		}
+	</script>
+	</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	    <title></title>
+	    <link rel="stylesheet" href="css/common.css" />
+	    <link rel="stylesheet" href="css/reset.css" />
+	    <link rel="stylesheet" href="css/anquan.css" />
+	    <script type="text/javascript">
+	    	document.documentElement.style.fontSize = document.documentElement.clientWidth/320*20+'px';
+			window.onresize = function(){
+				document.documentElement.style.fontSize = document.documentElement.clientWidth/320*20+'px';
+			};
+	
+	   		
+	   		
+	    </script>
+	</head>
+	<body>
+		<div class="clear">
+			<a class="left" >
+				<img class="left" src="img/exit.jpg" />
+				<span class="left">返回</span>
+			</a>
+			<div class="left">安全中心</div>
+			
+		</div>
+		<div></div>
+		<div>
+			<a href="jabascript:;">
+				
+				<span>修改登录密码</span>
+				<img src="img/jiantou.jpg" />
+			</a>
+			<a href="jabascript:;">
+			
+				<span>修改交易密码</span>
+				<img src="img/jiantou.jpg" />
+			</a>
+			<a href="jabascript:;">
+				
+				<span>修改手机号码</span>
+				<img src="img/jiantou.jpg" />
+			</a>
+			<a href="jabascript:;">
+				
+				<span>修改叫可密码</span>
+				<img src="img/jiantou.jpg" />
+			</a>
+		</div>
+		<div>
+			<a href="jabascript:;">
+				
+				<p>手势密码</p>
+				<div id="green">
+					<i id="white"></i>
+				</div>
+			</a>
+			<a href="jabascript:;">
+				
+				<span>重设手势</span>
+				<img src="img/jiantou.jpg" />
+			</a>
+		</div>
+		
+	</body>
+	<script>
+		var green=document.getElementById("green"),
+			white=document.getElementById("white");
+			
+			var oL,lL
+			var dis=green.innerWidth-white.innerWidth
+		white.addEventListener('touchstart',function(e){
+			oL=e.touches[0].clientX;
+		},false)
+		white.addEventListener('touchmove',function(e){
+			lL = e.touches[0].clientX-oL ;
+			if(lL>0){
+				lL=lL<dis?dis:lL
+				lL=lL>18?18:lL
+			}else{
+				lL=lL>dis?dis:lL
+				lL=lL<0?0:lL
+			}
+			white.style.left=lL+'px'
+		},false)
+		document.addEventListener('touchend',function(){
+			white.style.left=lL+'px'
+		},false);
+		
+		
+		var qx = document.getElementsByClassName("left")[0];
+		qx.onclick = function(){
+			history.back(-1)
+		}
+	</script>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/2.css"/>
+		<script src="js/rem.js"></script>
+	</head>
+	<body>
+		<header>
+			<input type="text" value="浪琴" class="fl" />
+			<button class="fr">取消</button>
+		</header>
+		<div class="resou">
+			<span>热搜</span>
+			<a href="javascript:;">浪琴</a>
+			<a href="javascript:;">坚果炒货</a>
+			<a href="javascript:;">iPhone 7</a>
+		</div>
+		<div class="zjrs">
+			<span class="fl">最近搜索</span>
+			<span class="fr"><img src="img/clear.jpg"/></span>
+		</div>
+		<div class="sshistory">
+			<p>暂无搜索历史</p>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var qx = document.getElementsByClassName("fr")[0];
+		qx.onclick = function(){
+			history.back(-1)
+		}
+	</script>
+</html>

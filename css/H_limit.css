@@ -1,0 +1,80 @@
+body{
+	background:#f3f3f3
+}
+.H_top {
+	width:100%;
+	height: 2rem;
+	line-height: 2rem;
+	background: #457ecd;
+	color:#fff;
+	position: fixed;
+	top:0;
+	left:0;
+	font-size: 0.75rem;
+	overflow: hidden;
+	
+}
+.H_top>div{
+	width:2.6rem;
+	height: 2rem;
+	text-align: right;
+	font-size: 0.6rem;
+    float:left;
+}
+.H_top>div>i {
+    display: block;
+    width:  0.64rem;
+    height: 1.15rem;
+    margin-left: 0.45rem;
+    margin-top: 0.45rem;
+    float:left;
+}
+.H_top>div>i  {
+    background: url(../img/jiantou.gif) no-repeat;
+    background-size: 0.64rem 1.15rem;
+}
+.H_top>span{
+	float:left;
+	margin-left:3.85rem;
+}
+.H_title{
+	background:#f3f3f3;
+	height: 2.25rem;
+	line-height: 2.25rem;
+	font-size:0.65rem;
+	padding:0 0.65rem;
+	
+}
+.H_title>span:nth-child(2){
+	color:#ff9600;
+}
+.H_expl{
+	background:#fff;
+	height: 2.7rem;
+	line-height: 2.7rem;
+	font-size:0.65rem;
+	padding:0 0.65rem;
+	margin-bottom: 0.1rem;
+	display: -webkit-box;
+    -webkit-box-orient: horizontal;
+}
+.H_expl>span:nth-child(1){
+	display: block;
+	-webkit-box-flex: 1;
+}
+.H_expl>span:nth-child(2){
+	display: block;
+	-webkit-box-flex: 1;
+	text-align: right;
+}
+.H_expl>.H_apply{
+	width: 3.15rem;
+	height: 1.15rem;
+	background: #fda114;
+	border:1px solid #fe9b05;
+	border-radius: 3px;
+	margin-top: 0.7rem;
+	color:#fff;
+	font-size:0.5rem;
+	
+}

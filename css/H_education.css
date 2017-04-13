@@ -1,0 +1,76 @@
+.H_top {
+	width:100%;
+	height: 2rem;
+	line-height: 2rem;
+	background: #457ecd;
+	color:#fff;
+	position: fixed;
+	top:0;
+	left:0;
+	font-size: 0.75rem;
+	overflow: hidden;
+	
+}
+.H_top>div{
+	width:2.6rem;
+	height: 2rem;
+	text-align: right;
+	font-size: 0.6rem;
+    float:left;
+}
+.H_top>div>i {
+    display: block;
+    width:  0.64rem;
+    height: 1.15rem;
+    margin-left: 0.45rem;
+    margin-top: 0.45rem;
+    float:left;
+}
+.H_top>div>i  {
+    background: url(../img/jiantou.gif) no-repeat;
+    background-size: 0.64rem 1.15rem;
+}
+.H_top>span{
+	float:left;
+	margin-left:3.85rem;
+}
+.H_banner{
+	height: 8.75rem;
+	background:#457ecd;
+	text-align:center;
+	padding-top:2.85rem;
+	overflow: hidden;
+}
+.H_banner>img{
+	width: 3.8rem;
+	height: 3.85rem;
+	margin:0 auto;
+	
+}
+.H_banner>p{
+	margin-top:0.95rem;
+	color:#fff;
+	font-size: 0.7rem;
+	line-height: 1rem;
+}
+.H_banner>p>span{
+	font-size: 0.6rem;
+}
+
+
+.H_main{
+	text-align: center;
+	font-size: 0.6rem;
+}
+.H_main > .H_title{
+	margin-top:1.6rem;
+	margin-bottom:1.6rem;
+	color:#4a82d3;
+}
+.H_main >p:nth-child(2){
+	line-height: 1rem;
+}
+.H_main>img{
+	width: 100%;
+	height:19.95rem;
+}

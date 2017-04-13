@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>招联金融</title>
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/lottery ticket.css" />
+		<script src="js/rem.js"></script>
+	</head>
+	<body>
+		<div class="head">
+			<a href="javascript:;"></a>
+			<a href="K_index.html">返回</a>
+			<p>招联金融</p>
+			<a href="javscript:;" id="mask"></a>
+		</div>
+		<div class="head_one"></div>
+		<div class="banner">
+			<img src="img/s-30.gif" />
+			<p>活动时间:每周三10:00点开抢</p>
+		</div>
+		<div class="banner_one"> 
+			<img src="img/s-31.gif" />
+		</div>
+		<div class="ticket" style="margin-bottom: 0.4rem;">
+			<div class="setting">
+				<p class="setting_left">
+					<span>￥</span>
+					<span>200</span>
+					<span>券</span>
+				</p>
+				<p class="setting_right">已抢光</p>
+			</div>
+			<p class="location">每周三10:00点开抢</p>
+		</div>
+		<div class="ticket" style="margin-bottom: 0.4rem;">
+			<div class="setting">
+				<p class="setting_left">
+					<span>￥</span>
+					<span>100</span>
+					<span>券</span>
+				</p>
+				<p class="setting_right">已抢光</p>
+			</div>
+			<p class="location">每周三10:00点开抢</p>
+		</div>
+		<div class="ticket" style="margin-bottom: 0.4rem;">
+			<div class="setting">
+				<p class="setting_left">
+					<span>￥</span>
+					<span>50</span>
+					<span>券</span>
+				</p>
+				<p class="setting_right">已抢光</p>
+			</div>
+			<p class="location">每周三10:00点开抢</p>
+		</div>
+		<div class="ticket" style="margin-bottom: 0.4rem;">
+			<div class="setting">
+				<p class="setting_left">
+					<span>￥</span>
+					<span>20</span>
+					<span>券</span>
+				</p>
+				<p class="setting_right">已抢光</p>
+			</div>
+			<p class="location">每周三10:00点开抢</p>
+		</div>
+		<div class="mask" id="share">
+			<div class="share">
+				<p>
+					<a href="javscript:;">
+						<img src="img/s-25.gif" />
+						<span>微信好友</span>
+					</a>
+					<a href="javscript:;">
+						<img src="img/s-26.gif" />
+						<span>微信朋友圈</span>
+					</a>
+					<a href="javscript:;">
+						<img src="img/s-27.gif" />
+						<span>新浪微博</span>
+					</a>
+				</p>
+				<div>
+					<a href="javscript:;">
+						<img src="img/s-28.gif" />
+						<span>QQ好友</span>
+					</a>
+					<a href="javscript:;">
+						<img src="img/s-29.gif" />
+						<span>QQ空间</span>
+					</a>
+				</div>
+				<a href="javascript:;" class="cancel" id="cancel">取消</a>
+			</div>
+		</div>
+		<script>
+			
+			var mask = document.getElementById('mask');
+			var share = document.getElementById('share');
+			var cancel = document.getElementById('cancel');
+			mask.addEventListener('touchstart',function(){
+				share.style.display='block';
+			},false)
+			cancel.addEventListener('touchstart',function(){
+				share.style.display='none';
+			},false)
+		</script>
+	</body>
+</html>

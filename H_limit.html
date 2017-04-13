@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" name="viewport">
+		<meta charset="UTF-8">
+		<title>我的额度 第24张</title>
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/H_limit.css" />
+		<script src="js/rem.js"></script>
+	</head>
+	<body>
+		<!--top start-->
+		<div class="H_top">
+			<div class="fh">
+				<i></i>
+				返回
+			</div>
+			<span>我的额度</span>
+		</div>
+		
+		<!--top end-->
+		<p class="H_title" style="margin-top: 2rem;">
+			<span>总额度</span>
+			<span><b>￥</b>0</span>
+		</p>
+		<p class="H_expl">
+			<span>可消费额度</span>
+			<span><b>￥</b>0</span>
+		</p>
+			<p class="H_expl">
+			<span>可用现金</span>
+			<span><b>￥</b>0</span>
+		</p>
+		<p class="H_title">
+			<span>专项额度（支持同时申请多种）</span>
+		</p>
+		<p class="H_expl">
+			<span>尚未申请专项额度</span>
+			<button class="H_apply">立即申请</button>
+		</p>
+		<script>
+		var fh = document.getElementsByClassName("fh")[0]
+		fh.onclick = function(){
+			history.back(-1)
+		}
+	</script>
+	</body>
+</html>

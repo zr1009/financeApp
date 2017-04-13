@@ -1,0 +1,65 @@
+body{
+	background: #f3f3f3;
+}
+ a,button,input {
+ 	-webkit-tap-highlight-color: rgba(255,0,0,0);
+ }
+
+header{
+	width: 100%;
+	height: 2rem;
+	background: #457ecd;
+	line-height: 2rem;
+	display: flex;
+	/*padding: 0 0.6rem;*/
+	color: #FFFFFF;
+	position: fixed;
+	top: 0;
+	z-index: 1;
+}
+header .goback{
+	width: 3rem;
+	margin: 0 0.6rem;
+}
+header .goback img{
+	width: 0.6rem;
+	height: 1rem;
+	vertical-align: middle;
+	margin-top: -0.2rem;
+}
+header p{
+	flex: 1;
+	text-align: center;
+	font-size: 0.8rem;
+}
+ul{
+	margin-top: 2rem;
+}
+ul li{
+	height: 2rem;
+	padding: 0.7rem;
+	background: #f8f8f8;
+	border-bottom: 0.1rem solid #f1f3f5;
+}
+ul li .moretool{
+	width: 1.9rem;
+	height: 1.9rem;
+}
+ul li div{
+	margin-left: 0.6rem;
+}
+ul li div h6{
+	line-height: 1rem;
+	color: #656565;
+}
+ul li div p{
+	line-height: 1rem;
+	color: #bfbdbd;
+}
+ul li span img{
+	display: block;
+	width: 0.4rem;
+	height: 0.6rem;
+	vertical-align: middle;
+	margin-top: 0.6rem;
+}

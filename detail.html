@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/detail.css" />
+    <link rel="stylesheet" href="css/details.css" />
+    <script type="text/javascript">
+    	document.documentElement.style.fontSize = document.documentElement.clientWidth/320*20+'px';
+		window.onresize = function(){
+			document.documentElement.style.fontSize = document.documentElement.clientWidth/320*20+'px';
+		};
+
+   		
+   		
+    </script>
+    
+</head>
+<body>
+	<div></div>
+	<div class="clear">
+		<a href="S_Mobilephone.html" class="left">
+			<img src="img/share.jpg" />
+		</a>
+		<a href="javascript:;" class="right">
+			<img src="img/fanhui.jpg" />
+		</a>
+	</div>
+	<div class="tu clear">
+		<div id="ul">
+			<a href="javascript:;" class="left">
+				<img src="img/photo_one.jpg" />
+			</a>
+			<a href="javascript:;" class="left">
+				<img src="img/photo_two.jpg" />
+			</a>
+			<a href="javascript:;" class="left">
+				<img src="img/photo_three.jpg" />
+			</a>
+			<a href="javascript:;" class="left">
+				<img src="img/photo_four.jpg" />
+			</a>
+		</div>
+		
+	</div>
+	<div>
+		<p>魅族 魅蓝5 手机[京东]</p>
+		<p>5.2英寸！13300万像素！指纹解锁！长续航！</p>
+		<p>￥788.00</p>
+	</div>
+	<div class="attribute">
+			<div class="color">
+				<p>颜色 :</p>
+				<p>
+					<span>磨砂黑</span>
+					<span>薄荷绿</span>
+					<span>香槟金</span>
+					<span>水河白</span>
+					<span>宝石蓝</span>
+				</p>
+			</div>
+			<div class="capacity">
+				<p>容量 :</p>
+				<p>
+					<span>32G</span>
+					<span>16G</span>
+				</p>
+			</div>
+			<div class="number">
+				<p>数量 :</p>
+				<p>
+					<span>-</span>
+					<span>1</span>
+					<span>+</span>
+				</p>
+			</div>
+		</div>
+		<div class="distribution">
+			<span>配送　<c>广东省深圳市</c></span>
+			<a>></a>
+		</div>
+		<p class="goods">无货</p>
+		<div class="distribution">
+			<span style="color: #3c3c3c;">图文详情</span>
+			<a>></a>
+		</div>
+		<div class="diva">
+			<img src="img/jingdong.png" class="imga">　京东配送　<img src="img/quality.png">　正品保障　<img src="img/free.png">　满99元包邮
+		</div>
+		<p class="look">查看更多商品分类</p>		
+		<p class="foot">立即购买</p>
+</body>
+<script>
+	var ul = document.getElementById('ul')
+	var div=ul.children
+	var allUL = ul.children[0]
+		
+	var ulIndex = 0;
+	var oldX = 0;
+	var newX = 0;
+	
+
+		ul.addEventListener('touchstart', function(e) {
+			oldX = e.touches[0].clientX;
+			
+			
+		}, false);
+
+		ul.addEventListener('touchmove', function(e) {
+			newX = e.touches[0].clientX - oldX
+		}, false);
+		ul.addEventListener('touchend', function(e) {
+			if (newX < -20 ) {
+				
+				if (ulIndex == div.length-1) {
+					ulIndex = div.length-1
+				}else{
+					ulIndex++;
+				}
+				ul.style.transition='0.5s'
+				ul.style.left = allUL.offsetWidth * (-ulIndex) + 'px';
+				
+			}else if(newX >20){
+				if (ulIndex == 0) {
+					ulIndex = 0
+				}else{
+					ulIndex--;
+				}
+				
+				ul.style.left = allUL.offsetWidth * (-ulIndex) + 'px'
+				ul.style.transition='0.5s' 
+				
+			}else {
+				ul.style.left = allUL.offsetWidth * (-ulIndex) + 'px'
+				
+			}
+
+		}, false);
+</script>
+</html>

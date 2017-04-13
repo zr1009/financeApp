@@ -1,0 +1,258 @@
+{
+  "K_index.html": {
+    "resources": [
+      "img/xszj.jpg",
+      "img/banner4.jpg",
+      "img/fqdy.jpg",
+      "img/sl.jpg",
+      "img/banner3.jpg",
+      "js/zepto.js",
+      "img/yhj.jpg",
+      "img/te.jpg",
+      "img/fqsc.jpg",
+      "img/hk.jpg",
+      "img/jdjh.jpg",
+      "img/hyr.jpg",
+      "img/xcfl.jpg",
+      "img/banner1.jpg",
+      "img/blrz.jpg",
+      "img/xysh.jpg",
+      "img/jrmx.jpg",
+      "img/czzx.jpg",
+      "img/banner2.jpg",
+      "css/1.css",
+      "img/wd.jpg",
+      "img/pl.jpg",
+      "js/zepto.fx.js",
+      "img/x-sy.jpg",
+      "img/sous.jpg",
+      "js/index.js",
+      "css/reset.css",
+      "img/lu.png",
+      "js/zTouch.min.js",
+      "S_homepage.html",
+      "Z_life.html",
+      "H_my.html",
+      "K_search.html",
+      "K_information.html",
+      "K_preference.html",
+      "js/swiper.min.js",
+      "js/jquery-2.1.4.min.js",
+      "css/swiper.min.css",
+      "img/my.png",
+      "css/bottoma.css",
+      "img/homepage.png",
+      "img/shopping.png",
+      "img/life.png"
+    ],
+    "refer": []
+  },
+  "S_homepage.html": {
+    "resources": [
+      "img/s-47.gif",
+      "img/s-5.gif",
+      "css/base.css",
+      "img/s-16.gif",
+      "css/home page.css",
+      "img/s-2.gif",
+      "img/s-64.gif",
+      "img/s-8.gif",
+      "img/s-62.gif",
+      "img/s-14.gif",
+      "img/s-46.gif",
+      "img/s-61.gif",
+      "img/s-10.gif",
+      "img/6.jpg",
+      "img/s-74.gif",
+      "img/s-52.gif",
+      "img/10.jpg",
+      "img/s-51.gif",
+      "img/s-13.gif",
+      "img/s-9.gif",
+      "img/s-63.gif",
+      "img/s-70.gif",
+      "img/s-4.gif",
+      "img/s-11.gif",
+      "img/s-56.gif",
+      "img/s-1.gif",
+      "img/8.jpg",
+      "img/s-48.gif",
+      "img/s-68.gif",
+      "img/s-45.gif",
+      "img/s-72.gif",
+      "img/9.jpg",
+      "img/s-73.gif",
+      "img/s-66.gif",
+      "img/4.jpg",
+      "img/5.jpg",
+      "img/s-50.gif",
+      "img/s-67.gif",
+      "svg/fonts/icomoon.ttf",
+      "img/s-6.gif",
+      "img/s-3.gif",
+      "img/7.jpg",
+      "img/s-57.gif",
+      "img/s-15.gif",
+      "Z_life.html",
+      "img/s-58.gif",
+      "js/home page.js",
+      "img/s-71.gif",
+      "img/s-60.gif",
+      "img/s-53.gif",
+      "img/s-17.gif",
+      "img/s-54.gif",
+      "img/s-65.gif",
+      "img/s-49.gif",
+      "img/s-69.gif",
+      "img/s-12.gif",
+      "img/s-55.gif",
+      "img/s-59.gif",
+      "svg/font.css",
+      "img/3.jpg",
+      "img/s-7.gif",
+      "K_index.html",
+      "H_my.html",
+      "js/zepto.fx.js",
+      "js/zTouch.min.js",
+      "js/zepto.js",
+      "css/bottomb.css",
+      "img/homepagea.png",
+      "img/shoppinga.png",
+      "img/my.png",
+      "img/life.png"
+    ],
+    "refer": [
+      "Z_life.html"
+    ]
+  },
+  "Z_life.html": {
+    "resources": [
+      "img/medicalbeauty.png",
+      "css/life.css",
+      "css/K_reset.css",
+      "img/life.png",
+      "img/medical.png",
+      "img/code.png",
+      "img/unicom.png",
+      "img/renovation.png",
+      "img/scan.png",
+      "H_my.html",
+      "K_index.html",
+      "S_homepage.html",
+      "img/wd.jpg",
+      "img/x-sy.jpg",
+      "img/fqsc.jpg",
+      "H_education.html",
+      "img/lifea.png",
+      "css/bottomc.css",
+      "img/shopping.png",
+      "img/homepagea.png"
+    ],
+    "refer": []
+  },
+  "H_my.html": {
+    "resources": [
+      "img/myicon2.gif",
+      "img/myicon3.gif",
+      "img/myicon5.gif",
+      "img/myicon1.gif",
+      "css/H_my.css",
+      "img/myico.gif",
+      "Z_life.html",
+      "img/myicon6.gif",
+      "img/myicon4.gif",
+      "js/rem.js",
+      "img/21youjt.gif",
+      "S_homepage.html",
+      "K_index.html",
+      "A_setUp.html",
+      "img/xysh.jpg",
+      "A_helpZx.html",
+      "K_information.html",
+      "K_preference.html",
+      "img/mya.png",
+      "css/bottomd.css"
+    ],
+    "refer": [
+      "Z_life.html"
+    ]
+  },
+  "K_search.html": {
+    "resources": [
+      "css/2.css",
+      "img/clear.jpg",
+      "K_index.html"
+    ],
+    "refer": []
+  },
+  "K_information.html": {
+    "resources": [
+      "img/wded.jpg",
+      "img/qtxx.jpg",
+      "img/wdzc.jpg",
+      "img/you.jpg",
+      "img/wdjy.jpg",
+      "css/6.css",
+      "img/yhhd.jpg",
+      "img/back.jpg",
+      "K_index.html",
+      "H_my.html",
+      "css/K_reset.css",
+      "js/rem.js"
+    ],
+    "refer": []
+  },
+  "K_preference.html": {
+    "resources": [
+      "img/yhjb.jpg",
+      "css/3.css",
+      "K_index.html",
+      "H_my.html",
+      "img/back.jpg"
+    ],
+    "refer": []
+  },
+  "A_setUp.html": {
+    "resources": [
+      "H_my.html",
+      "img/qq_h.jpg",
+      "img/jiantou.jpg",
+      "img/pyq.jpg",
+      "css/common.css",
+      "img/qq.jpg",
+      "img/exit.jpg",
+      "img/xinlang.jpg",
+      "img/weixing.jpg",
+      "css/setUp.css",
+      "css/reset.css"
+    ],
+    "refer": [
+      "H_my.html"
+    ]
+  },
+  "A_helpZx.html": {
+    "resources": [
+      "H_my.html",
+      "img/helpW.jpg",
+      "css/helpZx.css",
+      "img/help.jpg",
+      "img/jiantou.jpg",
+      "css/common.css",
+      "img/exit.jpg"
+    ],
+    "refer": [
+      "H_my.html"
+    ]
+  },
+  "H_education.html": {
+    "resources": [
+      "img/jiantou.gif",
+      "css/H_education.css",
+      "img/eduico.gif",
+      "js/rem.js",
+      "img/20lc.gif",
+      "Z_life.html"
+    ],
+    "refer": []
+  }
+}

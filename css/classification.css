@@ -1,0 +1,78 @@
+.head{
+	width:100%; height:2rem; background: #457ecd; position: fixed; top:0; z-index: 100;
+}
+.head_one{
+	width:100%; height:2rem; background: #457ecd;
+}
+.head a:nth-child(1){
+	display: block; width:0.6rem; height:0.95rem; background:url(../img/s-18.gif); background-size: cover;
+	margin-top:0.55rem; margin-left:0.65rem; float: left; font-weight: bold;
+}
+.head a:nth-child(2){
+	display: block; float: left; margin-left:0.25rem; font-size:0.6rem; color:#fff; width:1.6rem;
+	height:2rem; line-height:2rem;
+}
+.head p{
+	width:4.5rem; height:2rem; float: left; line-height: 2rem; font-size:0.8rem;color:#fff;
+	margin-left:3.5rem;
+}
+.head a:nth-child(4){
+	display: block; width:1rem; height:1rem; float: right; background:url(../img/s-19.gif);
+	background-size:cover; margin-right:0.6rem; margin-top:0.5rem;
+}
+
+.seek{
+	width:100%; height:2.2rem; background:#eaeceb; border-bottom: 0.05rem solid #dee5e7;
+}
+.seek_one{
+	width:15.2rem; height:1.3rem; background:#fff; margin-left:0.4rem; margin-top:0.45rem; float: left;
+}
+.seek_one img{
+	display: block; width:0.6rem; height:0.6rem; float: left; margin-left:0.55rem; margin-top:0.35rem;
+}
+.seek_one input{
+	width:13.7rem; height: 1.3rem; float: left; margin-left:0.25rem; border:none; line-height:2.2rem;
+	font-size:0.6rem; color:#e7e5e6;
+}
+
+.option{
+	width:100%; height:auto;
+}
+.option_left{
+	width:4.45rem; height:auto; float: left; display: block;
+}
+.option_left li{
+	width:3.85rem; height:2.25rem; border-bottom: 0.05rem solid #dee5e9; background:#eef2f3;
+	line-height:2.25rem; padding-left:0.6rem; font-size:0.6rem; color:#646666;
+/*	border-right: 0.05rem solid #dee5e9;*/
+}
+.option_left li.show{
+	width:3.65rem; height:2.25rem; border-bottom: 0.05rem solid #dee5e9; background:#fff;
+	border-left:0.2rem solid #3876ca; margin-left:0.1rem; font-size:0.5rem; color:#3876ca;
+	border-right:none;
+}
+.option_right{
+	width:11.5rem; height:auto; float: right;
+}
+.option_right ol{
+	width:11.5rem; height:auto; display: none;
+}
+.option_right ol.active{
+	width:11.5rem; height:auto; display: block;
+}
+.option_right h1{
+	width:10.9rem; height:1.25rem; font-size:0.5rem; color:#a7a7a7; margin-left:0.6rem;
+	margin-top:0.7rem;
+}
+.option_right li{
+	width:11.5rem; height:4.75rem; 
+}
+.option_right li p{
+	width:3.8rem; height:4.75rem; float: left;
+}
+.option_right li p img{
+	display: block; width:3.8rem; height:3.25rem;
+}
+.option_right li p span{
+	display: block; width:3.8rem; height:0.9rem; text-align: center; font-size:0.5rem; color:#a1a1a1;
+}

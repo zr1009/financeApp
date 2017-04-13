@@ -1,0 +1,625 @@
+﻿{
+	"@platforms": [
+		"android",
+		"iPhone",
+		"iPad"
+	],
+	"id": "H51D594CA",/*应用的标识，创建应用时自动生成，勿手动修改*/
+	"name": "financeApp",/*应用名称，程序桌面图标名称*/
+	"version": {
+		"name": "3.0",/*应用版本名称*/
+		"code": ""
+	},
+	"description": "",/*应用描述信息*/
+	"icons": {
+		"72": "icon.png"
+	},
+	"launch_path": "K_index.html",/*应用的入口页面，默认为根目录下的index.html；支持网络地址，必须以http://或https://开头*/
+	"developer": {
+		"name": "",/*开发者名称*/
+		"email": "",/*开发者邮箱地址*/
+		"url": ""
+	},
+	"permissions": {
+		"Accelerometer": {
+			"description": "访问加速度感应器"
+		},
+		"Audio": {
+			"description": "访问麦克风"
+		},
+		"Messaging": {
+			"description": "短彩邮件插件"
+		},
+		"Cache": {
+			"description": "管理应用缓存"
+		},
+		"Camera": {
+			"description": "访问摄像头"
+		},
+		"Console": {
+			"description": "跟踪调试输出日志"
+		},
+		"Contacts": {
+			"description": "访问系统联系人信息"
+		},
+		"Device": {
+			"description": "访问设备信息"
+		},
+		"Downloader": {
+			"description": "文件下载管理"
+		},
+		"Events": {
+			"description": "应用扩展事件"
+		},
+		"File": {
+			"description": "访问本地文件系统"
+		},
+		"Gallery": {
+			"description": "访问系统相册"
+		},
+		"Geolocation": {
+			"description": "访问位置信息"
+		},
+		"Invocation": {
+			"description": "使用Native.js能力"
+		},
+		"Orientation": {
+			"description": "访问方向感应器"
+		},
+		"Proximity": {
+			"description": "访问距离感应器"
+		},
+		"Storage": {
+			"description": "管理应用本地数据"
+		},
+
+		"Uploader": {
+			"description": "管理文件上传任务"
+		},
+		"Runtime": {
+			"description": "访问运行期环境"
+		},
+		"XMLHttpRequest": {
+			"description": "跨域网络访问"
+		},
+		"Zip": {
+			"description": "文件压缩与解压缩"
+		},
+		"Barcode": {
+			"description": "管理二维码扫描插件"
+		},
+		"Maps": {
+			"description": "管理地图插件"
+		},
+		"Speech": {
+			"description": "管理语音识别插件"
+		},
+		"Webview": {
+			"description": "窗口管理"
+		},
+		"NativeUI": {
+			"description": "原生UI控件"
+		},
+		"Navigator": {
+			"description": "浏览器信息"
+		},
+		"NativeObj": {
+			"description": "原生对象"
+		}
+	},
+	"plus": {
+		"splashscreen": {
+			"autoclose": true,/*是否自动关闭程序启动界面，true表示应用加载应用入口页面后自动关闭；false则需调plus.navigator.closeSplashscreen()关闭*/
+			"waiting": true,
+			"delay": "3000"
+		},
+		"popGesture": "close",/*设置应用默认侧滑返回关闭Webview窗口，"none"为无侧滑返回功能，"hide"为侧滑隐藏Webview窗口。参考http://ask.dcloud.net.cn/article/102*/
+		"runmode": "normal",/*应用的首次启动运行模式，可取liberate或normal，liberate模式在第一次启动时将解压应用资源（Android平台File API才可正常访问_www目录）*/
+		"signature": "Sk9JTiBVUyBtYWlsdG86aHIyMDEzQGRjbG91ZC5pbw==",/*可选，保留给应用签名，暂不使用*/
+		"distribute": {
+			"apple": {
+				"appid": "",/*iOS应用标识，苹果开发网站申请的appid，如io.dcloud.HelloH5*/
+				"mobileprovision": "",/*iOS应用打包配置文件*/
+				"password": "",/*iOS应用打包个人证书导入密码*/
+				"p12": "",/*iOS应用打包个人证书，打包配置文件关联的个人证书*/
+				"devices": "universal",/*iOS应用支持的设备类型，可取值iphone/ipad/universal*/
+				"frameworks": []
+			},
+			"google": {
+				"packagename": "",/*Android应用包名，如io.dcloud.HelloH5*/
+				"keystore": "",/*Android应用打包使用的密钥库文件*/
+				"password": "",/*Android应用打包使用密钥库中证书的密码*/
+				"aliasname": "",/*Android应用打包使用密钥库中证书的别名*/
+				"permissions": [
+					"<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>",
+					"<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>",
+					"<uses-permission android:name=\"android.permission.READ_CONTACTS\"/>",
+					"<uses-permission android:name=\"android.permission.VIBRATE\"/>",
+					"<uses-permission android:name=\"android.permission.READ_LOGS\"/>",
+					"<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>",
+					"<uses-feature android:name=\"android.hardware.camera.autofocus\"/>",
+					"<uses-permission android:name=\"android.permission.WRITE_CONTACTS\"/>",
+					"<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>",
+					"<uses-permission android:name=\"android.permission.CAMERA\"/>",
+					"<uses-permission android:name=\"android.permission.RECORD_AUDIO\"/>",
+					"<uses-permission android:name=\"android.permission.GET_ACCOUNTS\"/>",
+					"<uses-permission android:name=\"android.permission.MODIFY_AUDIO_SETTINGS\"/>",
+					"<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>",
+					"<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>",
+					"<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>",
+					"<uses-permission android:name=\"android.permission.CALL_PHONE\"/>",
+					"<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>",
+					"<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\"/>",
+					"<uses-feature android:name=\"android.hardware.camera\"/>",
+					"<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\"/>",
+					"<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>"
+				]
+			},
+			"orientation": [
+				"portrait-primary"
+			],/*应用支持的方向，portrait-primary：竖屏正方向；portrait-secondary：竖屏反方向；landscape-primary：横屏正方向；landscape-secondary：横屏反方向*/
+			"icons": {
+				"ios": {
+					"prerendered": true, /*应用图标是否已经高亮处理，在iOS6及以下设备上有效*/
+					"auto": "", /*应用图标，分辨率：512x512，用于自动生成各种尺寸程序图标*/
+					"iphone": {
+						"normal": "unpackage/res/icons/57x57.png", /*iPhone3/3GS程序图标，分辨率：57x57*/
+						"retina": "unpackage/res/icons/114x114.png", /*iPhone4程序图标，分辨率：114x114*/
+						"retina7": "unpackage/res/icons/120x120.png", /*iPhone4S/5/6程序图标，分辨率：120x120*/
+						"retina8": "unpackage/res/icons/180x180.png", /*iPhone6 Plus程序图标，分辨率：180x180*/
+						"spotlight-normal": "unpackage/res/icons/29x29.png", /*iPhone3/3GS Spotlight搜索程序图标，分辨率：29x29*/
+						"spotlight-retina": "unpackage/res/icons/58x58.png", /*iPhone4 Spotlight搜索程序图标，分辨率：58x58*/
+						"spotlight-retina7": "unpackage/res/icons/80x80.png", /*iPhone4S/5/6 Spotlight搜索程序图标，分辨率：80x80*/
+						"settings-normal": "unpackage/res/icons/29x29.png", /*iPhone4设置页面程序图标，分辨率：29x29*/
+						"settings-retina": "unpackage/res/icons/58x58.png", /*iPhone4S/5/6设置页面程序图标，分辨率：58x58*/
+						"settings-retina8": "unpackage/res/icons/87x87.png"
+					},
+					"ipad": {
+						"normal": "unpackage/res/icons/72x72.png", /*iPad普通屏幕程序图标，分辨率：72x72*/
+						"retina": "unpackage/res/icons/144x144.png", /*iPad高分屏程序图标，分辨率：144x144*/
+						"normal7": "unpackage/res/icons/76x76.png", /*iPad iOS7程序图标，分辨率：76x76*/
+						"retina7": "unpackage/res/icons/152x152.png", /*iPad iOS7高分屏程序图标，分辨率：152x152*/
+						"spotlight-normal": "unpackage/res/icons/50x50.png", /*iPad Spotlight搜索程序图标，分辨率：50x50*/
+						"spotlight-retina": "unpackage/res/icons/100x100.png", /*iPad高分屏Spotlight搜索程序图标，分辨率：100x100*/
+						"spotlight-normal7": "unpackage/res/icons/40x40.png",/*iPad iOS7 Spotlight搜索程序图标，分辨率：40x40*/
+						"spotlight-retina7": "unpackage/res/icons/80x80.png",/*iPad iOS7高分屏Spotlight搜索程序图标，分辨率：80x80*/
+						"settings-normal": "unpackage/res/icons/29x29.png",/*iPad设置页面程序图标，分辨率：29x29*/
+						"settings-retina": "unpackage/res/icons/58x58.png"
+					}
+				},
+				"android": {
+					"mdpi": "unpackage/res/icons/48x48.png", /*普通屏程序图标，分辨率：48x48*/
+					"ldpi": "unpackage/res/icons/48x48.png", /*大屏程序图标，分辨率：48x48*/
+					"hdpi": "unpackage/res/icons/72x72.png", /*高分屏程序图标，分辨率：72x72*/
+					"xhdpi": "unpackage/res/icons/96x96.png",/*720P高分屏程序图标，分辨率：96x96*/
+					"xxhdpi": "unpackage/res/icons/144x144.png",
+					"xxxhdpi": "unpackage/res/icons/192x192.png"
+				}
+			},
+			"splashscreen": {
+				"ios": {
+					"iphone": {
+						"default": "", /*iPhone3启动图片选，分辨率：320x480*/
+						"retina35": "",/*3.5英寸设备(iPhone4)启动图片，分辨率：640x960*/
+						/*4.0 英寸设备(iPhone5/iPhone5s)启动图片，分辨率：640x1136*/
+						/*4.7 英寸设备(iPhone6)启动图片，分辨率：750x1334*/
+						"retina55": "",/*5.5 英寸设备(iPhone6 Plus)启动图片，分辨率：1242x2208*/
+						"retina55l": ""
+					},
+					"ipad": {
+						"portrait": "", /*iPad竖屏启动图片，分辨率：768x1004*/
+						"portrait-retina": "",/*iPad高分屏竖屏图片，分辨率：1536x2008*/
+						"landscape": "", /*iPad横屏启动图片，分辨率：1024x748*/
+						"landscape-retina": "", /*iPad高分屏横屏启动图片，分辨率：2048x1496*/
+						"portrait7": "", /*iPad iOS7竖屏启动图片，分辨率：768x1024*/
+						"portrait-retina7": "",/*iPad iOS7高分屏竖屏图片，分辨率：1536x2048*/
+						"landscape7": "", /*iPad iOS7横屏启动图片，分辨率：1024x768*/
+						"landscape-retina7": ""
+					}
+				},
+				"android": {
+					"mdpi": "", /*普通屏启动图片，分辨率：240x282*/
+					"ldpi": "", /*大屏启动图片，分辨率：320x442*/
+					"hdpi": "C:/Users/韩玟慧/Desktop/page.png", /*高分屏启动图片，分辨率：480x762*/
+					"xhdpi": "C:/Users/韩玟慧/Desktop/page.png", /*720P高分屏启动图片，分辨率：720x1242*/
+					"xxhdpi": "C:/Users/韩玟慧/Desktop/page.png"
+				}
+			}
+		}
+	},
+	"fullscreen": true,
+	"dependencies": {
+		"pages": {
+			"K_index.html": {
+				"resources": [
+					"img/xszj.jpg",
+					"img/banner4.jpg",
+					"img/fqdy.jpg",
+					"img/sl.jpg",
+					"img/banner3.jpg",
+					"js/zepto.js",
+					"img/yhj.jpg",
+					"img/te.jpg",
+					"img/fqsc.jpg",
+					"img/hk.jpg",
+					"img/jdjh.jpg",
+					"img/hyr.jpg",
+					"img/xcfl.jpg",
+					"img/banner1.jpg",
+					"img/blrz.jpg",
+					"img/xysh.jpg",
+					"img/jrmx.jpg",
+					"img/czzx.jpg",
+					"img/banner2.jpg",
+					"css/1.css",
+					"img/wd.jpg",
+					"img/pl.jpg",
+					"js/zepto.fx.js",
+					"img/x-sy.jpg",
+					"img/sous.jpg",
+					"js/index.js",
+					"css/reset.css",
+					"img/lu.png",
+					"js/zTouch.min.js",
+					"S_homepage.html",
+					"Z_life.html",
+					"H_my.html",
+					"K_search.html",
+					"K_information.html",
+					"K_preference.html",
+					"js/swiper.min.js",
+					"js/jquery-2.1.4.min.js",
+					"css/swiper.min.css",
+					"img/my.png",
+					"css/bottoma.css",
+					"img/homepage.png",
+					"img/shopping.png",
+					"img/life.png"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"S_homepage.html": {
+				"resources": [
+					"img/s-47.gif",
+					"img/s-5.gif",
+					"css/base.css",
+					"img/s-16.gif",
+					"css/home page.css",
+					"img/s-2.gif",
+					"img/s-64.gif",
+					"img/s-8.gif",
+					"img/s-62.gif",
+					"img/s-14.gif",
+					"img/s-46.gif",
+					"img/s-61.gif",
+					"img/s-10.gif",
+					"img/6.jpg",
+					"img/s-74.gif",
+					"img/s-52.gif",
+					"img/10.jpg",
+					"img/s-51.gif",
+					"img/s-13.gif",
+					"img/s-9.gif",
+					"img/s-63.gif",
+					"img/s-70.gif",
+					"img/s-4.gif",
+					"img/s-11.gif",
+					"img/s-56.gif",
+					"img/s-1.gif",
+					"img/8.jpg",
+					"img/s-48.gif",
+					"img/s-68.gif",
+					"img/s-45.gif",
+					"img/s-72.gif",
+					"img/9.jpg",
+					"img/s-73.gif",
+					"img/s-66.gif",
+					"img/4.jpg",
+					"img/5.jpg",
+					"img/s-50.gif",
+					"img/s-67.gif",
+					"svg/fonts/icomoon.ttf",
+					"img/s-6.gif",
+					"img/s-3.gif",
+					"img/7.jpg",
+					"img/s-57.gif",
+					"img/s-15.gif",
+					"Z_life.html",
+					"img/s-58.gif",
+					"js/home page.js",
+					"img/s-71.gif",
+					"img/s-60.gif",
+					"img/s-53.gif",
+					"img/s-17.gif",
+					"img/s-54.gif",
+					"img/s-65.gif",
+					"img/s-49.gif",
+					"img/s-69.gif",
+					"img/s-12.gif",
+					"img/s-55.gif",
+					"img/s-59.gif",
+					"svg/font.css",
+					"img/3.jpg",
+					"img/s-7.gif",
+					"K_index.html",
+					"H_my.html",
+					"js/zepto.fx.js",
+					"js/zTouch.min.js",
+					"js/zepto.js",
+					"css/bottomb.css",
+					"img/homepagea.png",
+					"img/shoppinga.png",
+					"img/my.png",
+					"img/life.png"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"Z_life.html": {
+				"resources": [
+					"img/medicalbeauty.png",
+					"css/life.css",
+					"css/K_reset.css",
+					"img/life.png",
+					"img/medical.png",
+					"img/code.png",
+					"img/unicom.png",
+					"img/renovation.png",
+					"img/scan.png",
+					"H_my.html",
+					"K_index.html",
+					"S_homepage.html",
+					"img/wd.jpg",
+					"img/x-sy.jpg",
+					"img/fqsc.jpg",
+					"H_education.html",
+					"img/lifea.png",
+					"css/bottomc.css",
+					"img/shopping.png",
+					"img/homepagea.png"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"H_my.html": {
+				"resources": [
+					"img/myicon2.gif",
+					"img/myicon3.gif",
+					"img/myicon5.gif",
+					"img/myicon1.gif",
+					"css/H_my.css",
+					"img/myico.gif",
+					"Z_life.html",
+					"img/myicon6.gif",
+					"img/myicon4.gif",
+					"js/rem.js",
+					"img/21youjt.gif",
+					"S_homepage.html",
+					"K_index.html",
+					"A_setUp.html",
+					"img/xysh.jpg",
+					"A_helpZx.html",
+					"K_information.html",
+					"K_preference.html",
+					"img/mya.png",
+					"css/bottomd.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"K_search.html": {
+				"resources": [
+					"css/2.css",
+					"img/clear.jpg",
+					"K_index.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"K_information.html": {
+				"resources": [
+					"img/wded.jpg",
+					"img/qtxx.jpg",
+					"img/wdzc.jpg",
+					"img/you.jpg",
+					"img/wdjy.jpg",
+					"css/6.css",
+					"img/yhhd.jpg",
+					"img/back.jpg",
+					"K_index.html",
+					"H_my.html",
+					"css/K_reset.css",
+					"js/rem.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"K_preference.html": {
+				"resources": [
+					"img/yhjb.jpg",
+					"css/3.css",
+					"K_index.html",
+					"H_my.html",
+					"img/back.jpg"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"A_setUp.html": {
+				"resources": [
+					"H_my.html",
+					"img/qq_h.jpg",
+					"img/jiantou.jpg",
+					"img/pyq.jpg",
+					"css/common.css",
+					"img/qq.jpg",
+					"img/exit.jpg",
+					"img/xinlang.jpg",
+					"img/weixing.jpg",
+					"css/setUp.css",
+					"css/reset.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"A_helpZx.html": {
+				"resources": [
+					"H_my.html",
+					"img/helpW.jpg",
+					"css/helpZx.css",
+					"img/help.jpg",
+					"img/jiantou.jpg",
+					"css/common.css",
+					"img/exit.jpg"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"H_education.html": {
+				"resources": [
+					"img/jiantou.gif",
+					"css/H_education.css",
+					"img/eduico.gif",
+					"js/rem.js",
+					"img/20lc.gif",
+					"Z_life.html"
+				],
+				"refer": [],
+				"priority": 0
+			}
+		},
+		"idle": {
+			"resources": [
+				"img/404.gif",
+				"svg/fonts/icomoon.svg",
+				"img/password.png",
+				"Z_today.html",
+				"img/photo.png",
+				"img/no_yo.jpg",
+				"css/register.less",
+				"img/condition_c.png",
+				"svg/fonts/glyphicons-halflings-regular.woff2",
+				"H_identity.html",
+				"img/s-41.gif",
+				"S_order page.html",
+				"img/product_d.png",
+				"img/s-38.gif",
+				"img/23ico2.gif",
+				"img/s-37.gif",
+				"css/H_root.css",
+				"Z_login.html",
+				"css/4.css",
+				"img/s-21.gif",
+				"img/s-24.gif",
+				"css/login.css",
+				"css/anquan.css",
+				"img/banner.gif",
+				"img/23ico1.gif",
+				"Z_register.html",
+				"css/H_medical.css",
+				"S_classification.html",
+				"img/s-35.gif",
+				"css/H_identity.css",
+				"img/s-40.gif",
+				"img/myicon7.gif",
+				"img/dd.jpg",
+				"A_myYhq.html",
+				"svg/fonts/glyphicons-halflings-regular.woff",
+				"css/register.css",
+				"svg/selection.json",
+				"img/s-43.gif",
+				"img/portrait.png",
+				"css/gzwx.css",
+				"css/contract.css",
+				"svg/fonts/Montserrat-Regular.ttf",
+				"img/s-25.gif",
+				"img/s-23.gif",
+				"K_bill.html",
+				"img/product_c.png",
+				"img/s-39.gif",
+				"img/product_a.png",
+				"css/lottery ticket.css",
+				"svg/fonts/glyphicons-halflings-regular.svg",
+				"img/s-44.gif",
+				"S_lottery ticket.html",
+				"lead in pages.html",
+				"svg/svg.rar",
+				"svg/demo-files/demo.css",
+				"img/email.png",
+				"svg/fonts/glyphicons-halflings-regular.eot",
+				"css/login.less",
+				"css/H_user.css",
+				"img/s-26.gif",
+				"img/yhj2.jpg",
+				"img/ico3.gif",
+				"svg/demo-files/demo.js",
+				"img/no_b.jpg",
+				"img/s-42.gif",
+				"css/classification.css",
+				"img/myicon8.gif",
+				"img/ewm.jpg",
+				"img/s-32.gif",
+				"css/order page.css",
+				"K_cashless.html",
+				"index.html",
+				"img/s-20.gif",
+				"H_root.html",
+				"img/s-27.gif",
+				"A_anquan.html",
+				"css/today.less",
+				"img/qb.jpg",
+				"svg/fonts/glyphicons-halflings-regular.ttf",
+				"css/decoration.css",
+				"img/ico1.gif",
+				"img/xiajt.gif",
+				"img/s-18.gif",
+				"img/s-28.gif",
+				"css/life.less",
+				"img/lu.jpg",
+				"img/s-33.gif",
+				"svg/Read Me.txt",
+				"img/logo.png",
+				"svg/demo.html",
+				"css/myYhq.css",
+				"img/product_b.png",
+				"Z_decoration.html",
+				"img/cover.png",
+				"css/cover.less",
+				"img/condition_b.png",
+				"svg/fonts/icomoon.eot",
+				"img/tx.gif",
+				"css/H_limit.css",
+				"img/process.png",
+				"css/today.css",
+				"H_user.html",
+				"H_limit.html",
+				"img/s-36.gif",
+				"H_medical.html",
+				"img/s-30.gif",
+				"img/return.png",
+				"css/Mobile phone.css",
+				"css/contract.less",
+				"img/s-19.gif",
+				"js/classification.js",
+				"img/youjt.gif",
+				"img/background.jpg",
+				"svg/fonts/icomoon.woff",
+				"css/decoration.less",
+				"A_gzwx.html",
+				"img/s-29.gif",
+				"svg/fonts/Oxygen-Regular.ttf",
+				"css/cover.css",
+				"img/ico2.gif",
+				"S_Mobile phone.html",
+				"img/s-22.gif",
+				"img/s-31.gif",
+				"img/timg.jpg",
+				"Z_contract.html",
+				"img/s-34.gif",
+				"img/22ico.gif",
+				"img/condition_a.png"
+			]
+		}
+	}
+}
